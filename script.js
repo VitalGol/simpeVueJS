@@ -1,9 +1,16 @@
 var app = new Vue({
 	el: '#app',
 	data: {
-		msg: 'hello <i>Vitaly</i> !!!',
-		view: true,
-		message: 'write!!!',
-		checked: 'true'
+		count: 0,
+		url: '',
+		cleanUrl: ''
+	},
+	methods: {
+		countUp() {
+			this.count += 1;
+		},
+		cleanerUrl() {
+			this.cleanUrl = this.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+		}
 	}
 });
