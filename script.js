@@ -1,9 +1,7 @@
 var app = new Vue({
 	el: '#app',
 	data: {
-		msg: 'hello <i>Vitaly</i> !!!'
+		msg: 'hello <i>Vitaly</i> !!!',
+		view: true
 	}
 });
-// console.log(app);
-
-// app.msg = 'change text';
