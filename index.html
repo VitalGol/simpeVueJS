@@ -11,7 +11,21 @@
 <body>
 
 	<div id="app">
-		<h1 v-show='view' v-html='msg'></h1>
+		<h1 v-show='view' v-html='msg'>one</h1>
+		<h1 v-if='false' v-html='msg'>two</h1>
+
+		<input type="text" v-model='message'>
+		<p>{{message}}</p>
+
+		<input type="checkbox" v-model='checked'>
+		<label for="checked">{{ checked }}</label>
+
+		<h1 v-pre>{{Lorem	ipsum dolor sit amet consectetur
+			 adipisicing elit. Possimus ex dolorem eligendi
+				repudiandae eaque doloremque nostrum, ipsam eos 
+				repellat! Dolor possimus voluptatem quidem cumque
+				 ea alias accusantium quo facere ex.}}</h1>
+
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
